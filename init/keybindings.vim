@@ -128,10 +128,6 @@ nmap du :diffupdate<CR>
 " Gundo.vim
 map <leader>u :GundoToggle<CR>
 
-" ctrlp
-" <leader>f is the default trigger (set in init/ctrlp.vim)
-nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
-
 " Additional mapping for buffer search
 nnoremap <silent> <leader>bb :CtrlPBuffer<cr>
 map <D-e> :CtrlPBuffer<CR>
