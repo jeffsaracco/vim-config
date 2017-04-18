@@ -48,6 +48,9 @@ map <D-Z>       :later 1<CR>
 nmap <leader>=  gg=G``
 map <silent> <F7> gg=G`` :delmarks z<CR>:echo "Reformatted."<CR>
 
+" Map jj to <Esc>
+inoremap jj <Esc>
+
 " Jump to a new line in insert mode
 imap <D-CR>     <Esc>o
 

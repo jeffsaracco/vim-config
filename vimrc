@@ -48,6 +48,8 @@ else
   Plugin 'nelstrom/vim-textobj-rubyblock'
   Plugin 'jgdavey/vim-blockle'
   Plugin 'tpope/vim-rake'
+  Plugin 'benmills/vimux'
+  Plugin 'pgr0ss/vimux-ruby-test'
 
   "
   " General Editing
