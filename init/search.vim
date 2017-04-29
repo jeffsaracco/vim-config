@@ -1,3 +1,6 @@
+set ignorecase
+
+
 " CtrlP
 let g:ctrlp_map = '<leader>f'
 " let g:ctrlp_working_path_mode = 'ra'
@@ -10,8 +13,9 @@ map <leader>f   :<F5>CtrlP<CR>
 " nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
 
 " let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
-let g:ctrlp_user_command = 'rg --files %s'
+let g:ctrlp_user_command = 'rg -i --files %s'
 
 " RG
 let g:rg_highlight = 'true'
 let g:rg_derive_root = 'true'
+let g:rg_command = 'rg -S --vimgrep'

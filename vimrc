@@ -101,6 +101,7 @@ else
   Plugin 'kien/ctrlp.vim'
 
   Plugin 'jremmen/vim-ripgrep'
+  Plugin 'google/vim-searchindex'
 
   "
   " Navigation
