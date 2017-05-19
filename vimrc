@@ -38,6 +38,7 @@ else
   Plugin 'candycode.vim'
   Plugin 'Colour-Sampler-Pack'
   Plugin 'flazz/vim-colorschemes'
+  Plugin 'google/vim-colorscheme-primary'
 
   "
   " Ruby / Rails
