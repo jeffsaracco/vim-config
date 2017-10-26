@@ -38,7 +38,8 @@ else
   Plugin 'candycode.vim'
   Plugin 'Colour-Sampler-Pack'
   Plugin 'flazz/vim-colorschemes'
-  Plugin 'google/vim-colorscheme-primary'
+  Plugin 'trevordmiller/nova-vim'
+  Plugin 'ajmwagar/vim-dues'
 
   "
   " Ruby / Rails
@@ -88,6 +89,7 @@ else
   Plugin 'editorconfig/editorconfig-vim'
   Plugin 'tpope/vim-projectionist'
   Plugin 'kien/rainbow_parentheses.vim'
+  Plugin 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 
   "
   " Window Management

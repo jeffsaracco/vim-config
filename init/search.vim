@@ -1,8 +1,8 @@
 set ignorecase
 
-
 " CtrlP
 let g:ctrlp_map = '<leader>f'
+let g:ctrlp_use_caching = 0
 " let g:ctrlp_working_path_mode = 'ra'
 map <c-p>       :CtrlPMRUFiles<CR>
 map <leader>F   :<F5>CtrlP<CR>
@@ -12,7 +12,6 @@ map <leader>f   :<F5>CtrlP<CR>
 " <leader>f is the default trigger (set in init/ctrlp.vim)
 " nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
 
-" let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:ctrlp_user_command = 'rg -i --files %s'
 
 " RG
