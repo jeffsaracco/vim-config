@@ -105,6 +105,7 @@ else
 
   Plugin 'jremmen/vim-ripgrep'
   Plugin 'google/vim-searchindex'
+  Plugin 'nixprime/cpsm', { 'do': 'env PY3=OFF ./install.sh' }
 
   "
   " Navigation
