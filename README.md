@@ -2,6 +2,8 @@
 (Re)move ~/.vim and ~/.vimrc if you have them already, and run:
 
     git clone https://github.com/pivotal/vim-config.git ~/.vim
+    brew install reattach-to-user-namespace
+    pip2 install --user powerline-status
     ~/.vim/bin/install
 
 # Updating
