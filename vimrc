@@ -150,6 +150,7 @@ else
   Plugin 'sjl/vitality.vim'
   Plugin 'brysgo/test_server'
   Plugin 'mdelillo/vim-simple-bdd'
+  Plugin 'tmux-plugins/vim-tmux-focus-events'
 
   call vundle#end()
 
