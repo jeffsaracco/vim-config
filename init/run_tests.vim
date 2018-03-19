@@ -4,5 +4,5 @@ map <Leader>rr :TestNearest<CR>
 " map <Leader>R :RunAllRubyTests<CR>
 map <Leader>R :call VimuxRunCommand("clear; bin/testrb " . bufname("%"))<CR>
 
-let g:test#ruby#minitest#executable = 'RAILS_ENV=test bin/safe-ruby'
 let g:test#strategy = "vimux"
+let test#runners = {'Ruby': ['Github', 'MiniTest', 'Rails', 'RSpec']}
