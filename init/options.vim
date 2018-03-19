@@ -1,6 +1,6 @@
 scriptencoding utf-8
 
-set guifont=Menlo:h14
+set guifont=Roboto\ Mono\ Medium\ For\ Powerline:h14
 set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars

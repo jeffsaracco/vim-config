@@ -51,7 +51,7 @@ else
   Plugin 'jgdavey/vim-blockle'
   Plugin 'tpope/vim-rake'
   Plugin 'benmills/vimux'
-  Plugin 'pgr0ss/vimux-ruby-test'
+  Plugin 'janko-m/vim-test'
 
   "
   " General Editing
@@ -102,6 +102,8 @@ else
   Plugin 'tpope/vim-abolish'
   Plugin 'henrik/vim-qargs'
   Plugin 'kien/ctrlp.vim'
+  Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plugin 'junegunn/fzf.vim'
 
   Plugin 'jremmen/vim-ripgrep'
   Plugin 'google/vim-searchindex'
@@ -140,6 +142,7 @@ else
   " Development Tool Integration
   "
   Plugin 'tpope/vim-fugitive'
+  Plugin 'tpope/vim-rhubarb'
   Plugin 'airblade/vim-gitgutter'
   Plugin 'pivotal/tmux-config'
   Plugin 'tpope/vim-dispatch'
