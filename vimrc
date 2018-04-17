@@ -102,7 +102,7 @@ else
   Plugin 'kchmck/vim-coffee-script'
   Plugin 'tpope/vim-haml'
   Plugin 'juvenn/mustache.vim'
-  Plugin 'fatih/vim-go'
+  Plugin 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plugin 'chrisbra/csv.vim'
   Plugin 'elzr/vim-json'
   Plugin 'briancollins/vim-jst'
