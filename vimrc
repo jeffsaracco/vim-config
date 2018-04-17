@@ -29,17 +29,10 @@ else
   "
   " Colorschemes
   "
-  Plugin 'tpope/vim-vividchalk'
   Plugin 'chriskempson/base16-vim'
-  Plugin 'molokai'
   Plugin 'altercation/vim-colors-solarized'
-  Plugin 'wgibbs/vim-irblack'
   Plugin 'chriskempson/vim-tomorrow-theme'
-  Plugin 'candycode.vim'
-  Plugin 'Colour-Sampler-Pack'
   Plugin 'flazz/vim-colorschemes'
-  Plugin 'trevordmiller/nova-vim'
-  Plugin 'ajmwagar/vim-dues'
 
   "
   " Ruby / Rails
@@ -64,7 +57,6 @@ else
   Plugin 'kana/vim-textobj-line'
   Plugin 'thinca/vim-textobj-between'
   Plugin 'tpope/vim-unimpaired'
-  Plugin 'sjl/gundo.vim'
   Plugin 'godlygeek/tabular'
   Plugin 'scrooloose/syntastic'
   Plugin 'vim-airline/vim-airline'
@@ -73,28 +65,13 @@ else
   Plugin 'nertzy/j-split'
   Plugin 'matt-royal/diffthese'
   Plugin 'camelcasemotion'
-  Plugin 'nertzy/edit-plus'
-  Plugin 'brysgo/quickfixfix'
-  Plugin 'Lokaltog/vim-easymotion'
   Plugin 'regreplop.vim'
-  Plugin 'Peeja/insert_mode_background_color'
-  Plugin 'vim-scripts/L9'
   Plugin 'Peeja/vim-cdo'
-  Plugin 'MarcWeber/vim-addon-mw-utils'
-  Plugin 'tomtom/tlib_vim'
   Plugin 'garbas/vim-snipmate'
   Plugin 'honza/vim-snippets'
-  Plugin 'YankRing.vim'
-  Plugin 'terryma/vim-multiple-cursors'
-  Plugin 'editorconfig/editorconfig-vim'
-  Plugin 'tpope/vim-projectionist'
+  Plugin 'tpope/vim-projectionist' " this is for :AV
   Plugin 'kien/rainbow_parentheses.vim'
-  Plugin 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
-
-  "
-  " Window Management
-  "
-  Plugin 'ZoomWin'
+  Plugin 'MarcWeber/vim-addon-mw-utils'
 
   "
   " Searching
@@ -113,7 +90,6 @@ else
   " Navigation
   "
   Plugin 'scrooloose/nerdtree'
-  Plugin 'majutsushi/tagbar'
 
   "
   " Languages
@@ -121,19 +97,16 @@ else
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'pangloss/vim-javascript'
   Plugin 'plasticboy/vim-markdown'
+  Plugin 'shime/vim-livedown'
   Plugin 'nono/vim-handlebars'
   Plugin 'kchmck/vim-coffee-script'
   Plugin 'tpope/vim-haml'
   Plugin 'juvenn/mustache.vim'
   Plugin 'fatih/vim-go'
-  Plugin 'rosstimson/scala-vim-support'
-  Plugin 'guns/vim-clojure-static'
   Plugin 'chrisbra/csv.vim'
   Plugin 'elzr/vim-json'
   Plugin 'briancollins/vim-jst'
-  Plugin 'digitaltoad/vim-jade'
   Plugin 'mxw/vim-jsx'
-  Plugin 'lambdatoast/elm.vim'
   Plugin 'leafgarland/typescript-vim'
   Plugin 'digitaltoad/vim-pug'
   Plugin 'elixir-lang/vim-elixir'
@@ -146,10 +119,7 @@ else
   Plugin 'airblade/vim-gitgutter'
   Plugin 'pivotal/tmux-config'
   Plugin 'tpope/vim-dispatch'
-  Plugin 'carlobaldassi/ConqueTerm'
   Plugin 'sjl/vitality.vim'
-  Plugin 'brysgo/test_server'
-  Plugin 'mdelillo/vim-simple-bdd'
   Plugin 'tmux-plugins/vim-tmux-focus-events'
 
   call vundle#end()
