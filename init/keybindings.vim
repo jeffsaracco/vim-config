@@ -182,14 +182,3 @@ map <D-F> :Ag<Space>
 nmap <leader>ld <Plug>LocalMakelet
 
 nmap <leader>rp :RainbowParenthesesToggle<CR>
-
-" Convert simple_bdd steps into methods
-nnoremap <leader>bdd :SimpleBDD<CR>
-vnoremap <leader>bdd :SimpleBDD<CR>
-
-if exists(":Tabularize")
-  nmap <Leader>a= :Tabularize /=<CR>
-  vmap <Leader>a= :Tabularize /=<CR>
-  nmap <Leader>a: :Tabularize /:\zs<CR>
-  vmap <Leader>a: :Tabularize /:\zs<CR>
-endif
