@@ -34,7 +34,7 @@ let g:fzf_action = {
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
 
-let g:fzf_layout = { 'window': '43split enew' }
+let g:fzf_layout = { 'down': '~40%' }
 
 " RG
 let g:rg_highlight = 'true'
@@ -43,4 +43,4 @@ let g:rg_command = 'rg -S --vimgrep'
 
 set grepprg=rg\ --vimgrep
 
-command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
