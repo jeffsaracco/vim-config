@@ -29,19 +29,15 @@ else
   "
   " Colorschemes
   "
-  Plugin 'chriskempson/base16-vim'
-  Plugin 'altercation/vim-colors-solarized'
   Plugin 'chriskempson/vim-tomorrow-theme'
-  Plugin 'flazz/vim-colorschemes'
 
   "
   " Ruby / Rails
   "
+  Plugin 'vim-ruby/vim-ruby'
   Plugin 'tpope/vim-rails'
   Plugin 'tpope/vim-endwise'
   Plugin 'ecomba/vim-ruby-refactoring'
-  Plugin 'nelstrom/vim-textobj-rubyblock'
-  Plugin 'jgdavey/vim-blockle'
   Plugin 'tpope/vim-rake'
   Plugin 'benmills/vimux'
   Plugin 'janko-m/vim-test'
@@ -52,25 +48,13 @@ else
   Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
   Plugin 'scrooloose/nerdcommenter'
-  Plugin 'kana/vim-textobj-user'
-  Plugin 'Julian/vim-textobj-variable-segment'
-  Plugin 'kana/vim-textobj-line'
-  Plugin 'thinca/vim-textobj-between'
   Plugin 'tpope/vim-unimpaired'
-  Plugin 'godlygeek/tabular'
-  Plugin 'scrooloose/syntastic'
-  Plugin 'vim-airline/vim-airline'
-  Plugin 'vim-airline/vim-airline-themes'
-  Plugin 'ervandew/supertab'
-  Plugin 'nertzy/j-split'
+  " Plugin 'scrooloose/syntastic'
+  Plugin 'itchyny/lightline.vim'
   Plugin 'matt-royal/diffthese'
-  Plugin 'camelcasemotion'
-  Plugin 'regreplop.vim'
+  Plugin 'regreplop.vim' " This is for ctrl-K replacing
   Plugin 'Peeja/vim-cdo'
-  Plugin 'garbas/vim-snipmate'
-  Plugin 'honza/vim-snippets'
   Plugin 'tpope/vim-projectionist' " this is for :AV
-  Plugin 'kien/rainbow_parentheses.vim'
   Plugin 'MarcWeber/vim-addon-mw-utils'
 
   "
@@ -94,22 +78,13 @@ else
   "
   " Languages
   "
-  Plugin 'vim-ruby/vim-ruby'
   Plugin 'pangloss/vim-javascript'
   Plugin 'plasticboy/vim-markdown'
-  Plugin 'shime/vim-livedown'
   Plugin 'nono/vim-handlebars'
   Plugin 'kchmck/vim-coffee-script'
-  Plugin 'tpope/vim-haml'
   Plugin 'juvenn/mustache.vim'
   Plugin 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-  Plugin 'chrisbra/csv.vim'
   Plugin 'elzr/vim-json'
-  Plugin 'briancollins/vim-jst'
-  Plugin 'mxw/vim-jsx'
-  Plugin 'leafgarland/typescript-vim'
-  Plugin 'digitaltoad/vim-pug'
-  Plugin 'elixir-lang/vim-elixir'
 
   "
   " Development Tool Integration
@@ -118,7 +93,6 @@ else
   Plugin 'tpope/vim-rhubarb'
   Plugin 'airblade/vim-gitgutter'
   Plugin 'pivotal/tmux-config'
-  Plugin 'tpope/vim-dispatch'
   Plugin 'sjl/vitality.vim'
   Plugin 'tmux-plugins/vim-tmux-focus-events'
 

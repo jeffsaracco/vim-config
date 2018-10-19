@@ -35,7 +35,6 @@ set showmatch                   " Show matching brackets
 set hidden                      " Allow hidden, unsaved buffers
 set splitright                  " Add new windows towards the right
 set splitbelow                  " ... and bottom
-set wildmode=list:longest       " Bash-like tab completion
 set scrolloff=3                 " Scroll when the cursor is 3 lines from edge
 
 set laststatus=2                " Always show statusline
@@ -57,10 +56,7 @@ set autowriteall                " Save when doing various buffer-switching thing
 autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
 au FocusGained,BufEnter * :checktime
 
-let g:sql_type_default="postgresql"
 
-" Turn off ri tooltips that don't work with Ruby 1.9 yet
-" http://code.google.com/p/macvim/issues/detail?id=342
-if has("gui_running")
-  set noballooneval
-endif
+set lazyredraw
+set nocursorline
+set ttyfast
