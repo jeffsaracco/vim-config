@@ -41,7 +41,6 @@ else
   Plugin 'tpope/vim-rake'
   Plugin 'benmills/vimux'
   Plugin 'janko-m/vim-test'
-
   "
   " General Editing
   "
@@ -56,15 +55,17 @@ else
   Plugin 'Peeja/vim-cdo'
   Plugin 'tpope/vim-projectionist' " this is for :AV
   Plugin 'MarcWeber/vim-addon-mw-utils'
+  Plugin 'stefandtw/quickfix-reflector.vim'
 
   "
   " Searching
   "
   Plugin 'tpope/vim-abolish'
   Plugin 'henrik/vim-qargs'
-  Plugin 'kien/ctrlp.vim'
+  " Plugin 'kien/ctrlp.vim'
   Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plugin 'junegunn/fzf.vim'
+  Plugin 'pbogut/fzf-mru.vim'
 
   Plugin 'jremmen/vim-ripgrep'
   Plugin 'google/vim-searchindex'
@@ -85,6 +86,7 @@ else
   Plugin 'juvenn/mustache.vim'
   Plugin 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plugin 'elzr/vim-json'
+  Plugin 'neoclide/coc.nvim', {'do': ':call coc#util#install()'}
 
   "
   " Development Tool Integration
