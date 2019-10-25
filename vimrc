@@ -82,9 +82,12 @@ Plug 'juvenn/mustache.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'elzr/vim-json'
 
+Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
+Plug 'ryanolsonx/vim-lsp-javascript'
 "
 " Development Tool Integration
 "
