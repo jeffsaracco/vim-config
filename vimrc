@@ -14,97 +14,93 @@
 " Instead, add it to one of the files in .vim/init, or create a new one.
 
 set nocompatible               " be iMproved
-filetype off                   " required!
 
-let need_to_install_plugins=0
-if empty(system("grep lazy_load ~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
-  echoerr "Vundle plugins are not installed. Please run ~/.vim/bin/install"
-else
-  set rtp+=~/.vim/bundle/Vundle.vim
-
-  call vundle#begin()
-
-  Plugin 'VundleVim/Vundle.vim'
-
-  "
-  " Colorschemes
-  "
-  Plugin 'chriskempson/vim-tomorrow-theme'
-
-  "
-  " Ruby / Rails
-  "
-  Plugin 'vim-ruby/vim-ruby'
-  Plugin 'tpope/vim-rails'
-  Plugin 'tpope/vim-endwise'
-  Plugin 'ecomba/vim-ruby-refactoring'
-  Plugin 'tpope/vim-rake'
-  Plugin 'benmills/vimux'
-  Plugin 'janko-m/vim-test'
-  "
-  " General Editing
-  "
-  Plugin 'tpope/vim-repeat'
-  Plugin 'tpope/vim-surround'
-  Plugin 'scrooloose/nerdcommenter'
-  Plugin 'tpope/vim-unimpaired'
-  Plugin 'itchyny/lightline.vim'
-  Plugin 'matt-royal/diffthese'
-  Plugin 'regreplop.vim' " This is for ctrl-K replacing
-  Plugin 'Peeja/vim-cdo'
-  Plugin 'tpope/vim-projectionist' " this is for :AV
-  Plugin 'MarcWeber/vim-addon-mw-utils'
-  Plugin 'stefandtw/quickfix-reflector.vim'
-
-  "
-  " Searching
-  "
-  Plugin 'tpope/vim-abolish'
-  Plugin 'henrik/vim-qargs'
-  " Plugin 'kien/ctrlp.vim'
-  Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  Plugin 'junegunn/fzf.vim'
-  Plugin 'pbogut/fzf-mru.vim'
-
-  Plugin 'jremmen/vim-ripgrep'
-  Plugin 'google/vim-searchindex'
-  Plugin 'nixprime/cpsm', { 'do': 'env PY3=OFF ./install.sh' }
-
-  "
-  " Navigation
-  "
-  Plugin 'scrooloose/nerdtree'
-
-  "
-  " Languages
-  "
-  Plugin 'pangloss/vim-javascript'
-  Plugin 'plasticboy/vim-markdown'
-  Plugin 'nono/vim-handlebars'
-  Plugin 'kchmck/vim-coffee-script'
-  Plugin 'juvenn/mustache.vim'
-  Plugin 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-  Plugin 'elzr/vim-json'
-
-  "
-  " Development Tool Integration
-  "
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'tpope/vim-rhubarb'
-  Plugin 'airblade/vim-gitgutter'
-  Plugin 'pivotal/tmux-config'
-  Plugin 'sjl/vitality.vim'
-  Plugin 'tmux-plugins/vim-tmux-focus-events'
-
-  call vundle#end()
-
-  filetype plugin indent on
-
-  syntax on
-
-  runtime! init/**.vim
-
-  if filereadable($HOME . "/.vimrc.local")
-    source ~/.vimrc.local
-  endif
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
+
+call plug#begin('~/.vim/plugged')
+
+"
+" Colorschemes
+"
+Plug 'chriskempson/vim-tomorrow-theme'
+
+"
+" Ruby / Rails
+"
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
+Plug 'ecomba/vim-ruby-refactoring'
+Plug 'tpope/vim-rake'
+Plug 'benmills/vimux'
+Plug 'janko-m/vim-test'
+"
+" General Editing
+"
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-unimpaired'
+Plug 'itchyny/lightline.vim'
+Plug 'matt-royal/diffthese'
+Plug 'Peeja/vim-cdo'
+Plug 'tpope/vim-projectionist' " this is for :AV
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'stefandtw/quickfix-reflector.vim'
+
+"
+" Searching
+"
+Plug 'tpope/vim-abolish'
+Plug 'henrik/vim-qargs'
+" Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'pbogut/fzf-mru.vim'
+
+Plug 'jremmen/vim-ripgrep'
+Plug 'google/vim-searchindex'
+Plug 'nixprime/cpsm', { 'do': 'env PY3=OFF ./install.sh' }
+
+"
+" Navigation
+"
+Plug 'scrooloose/nerdtree'
+
+"
+" Languages
+"
+Plug 'pangloss/vim-javascript'
+Plug 'plasticboy/vim-markdown'
+Plug 'nono/vim-handlebars'
+Plug 'kchmck/vim-coffee-script'
+Plug 'juvenn/mustache.vim'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'elzr/vim-json'
+
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+
+"
+" Development Tool Integration
+"
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'airblade/vim-gitgutter'
+Plug 'pivotal/tmux-config'
+Plug 'sjl/vitality.vim'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+call plug#end()
+
+syntax on
+
+runtime! init/**.vim
+
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
+

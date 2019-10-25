@@ -1,4 +1,4 @@
 .netrwhist
 doc/tags
 .vimlog
-bundle/*
+plugged/*
