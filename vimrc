@@ -48,7 +48,6 @@ else
   Plugin 'tpope/vim-surround'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'tpope/vim-unimpaired'
-  " Plugin 'scrooloose/syntastic'
   Plugin 'itchyny/lightline.vim'
   Plugin 'matt-royal/diffthese'
   Plugin 'regreplop.vim' " This is for ctrl-K replacing
@@ -86,14 +85,7 @@ else
   Plugin 'juvenn/mustache.vim'
   Plugin 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plugin 'elzr/vim-json'
-  if has('nvim')
-    Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  else
-    Plugin 'Shougo/deoplete.nvim'
-    Plugin 'roxma/nvim-yarp'
-    Plugin 'roxma/vim-hug-neovim-rpc'
-  endif
-  Plugin 'uplus/deoplete-solargraph'
+
   "
   " Development Tool Integration
   "
