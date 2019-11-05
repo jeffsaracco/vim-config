@@ -38,6 +38,17 @@ Plug 'ecomba/vim-ruby-refactoring'
 Plug 'tpope/vim-rake'
 Plug 'benmills/vimux'
 Plug 'janko-m/vim-test'
+
+"
+" Text Objects
+" 
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'kana/vim-textobj-line'
+Plug 'kana/vim-textobj-user'
+Plug 'Julian/vim-textobj-variable-segment'
+Plug 'kana/vim-textobj-line'
+Plug 'thinca/vim-textobj-between'
+
 "
 " General Editing
 "
@@ -51,6 +62,7 @@ Plug 'Peeja/vim-cdo'
 Plug 'tpope/vim-projectionist' " this is for :AV
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'stefandtw/quickfix-reflector.vim'
+Plug 'vim-scripts/regreplop.vim' " This is for ctrl-K replacing
 
 "
 " Searching
