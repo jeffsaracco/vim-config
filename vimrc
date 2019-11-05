@@ -43,7 +43,6 @@ Plug 'janko-m/vim-test'
 " Text Objects
 " 
 Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-user'
 Plug 'Julian/vim-textobj-variable-segment'
 Plug 'kana/vim-textobj-line'
