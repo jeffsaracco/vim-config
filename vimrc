@@ -38,6 +38,7 @@ Plug 'ecomba/vim-ruby-refactoring'
 Plug 'tpope/vim-rake'
 Plug 'benmills/vimux'
 Plug 'janko-m/vim-test'
+Plug 'jgdavey/vim-blockle'
 
 "
 " Text Objects
