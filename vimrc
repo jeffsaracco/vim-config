@@ -80,6 +80,7 @@ Plug 'nixprime/cpsm', { 'do': 'env PY3=OFF ./install.sh' }
 " Navigation
 "
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "
 " Languages
