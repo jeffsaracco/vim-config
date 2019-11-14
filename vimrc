@@ -98,6 +98,7 @@ Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete-gocode.vim'
+Plug 'prabirshrestha/asyncomplete-file.vim'
 
 Plug 'ryanolsonx/vim-lsp-javascript'
 "
