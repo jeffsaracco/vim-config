@@ -41,7 +41,7 @@ Plug 'janko-m/vim-test'
 
 "
 " Text Objects
-" 
+"
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'kana/vim-textobj-user'
 Plug 'Julian/vim-textobj-variable-segment'
@@ -56,6 +56,7 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-unimpaired'
 Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
 Plug 'matt-royal/diffthese'
 Plug 'Peeja/vim-cdo'
 Plug 'tpope/vim-projectionist' " this is for :AV
@@ -93,14 +94,15 @@ Plug 'juvenn/mustache.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'elzr/vim-json'
 
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'prabirshrestha/asyncomplete-gocode.vim'
-Plug 'prabirshrestha/asyncomplete-file.vim'
+Plug 'dense-analysis/ale'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
-Plug 'ryanolsonx/vim-lsp-javascript'
 "
 " Development Tool Integration
 "
@@ -119,4 +121,3 @@ runtime! init/**.vim
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
-

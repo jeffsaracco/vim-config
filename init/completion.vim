@@ -1,22 +1,4 @@
-imap <c-space> <Plug>(asyncomplete_force_refresh)
-
-" Disable auto popup
-let g:asyncomplete_auto_popup = 0
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-
-	" numWorkerspumvisible() ? "\s" : "\
-	" "
-
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ asyncomplete#force_refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-set completeopt+=preview
-
-autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option('sources', {
+\ '_': ['ale'],
+\})

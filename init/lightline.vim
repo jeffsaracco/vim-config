@@ -1,7 +1,3 @@
-function! CocCurrentFunction()
-  return get(b:, 'coc_current_function', '')
-endfunction
-
 function! RelativeFilename()
   let root = fnamemodify(get(b:, 'git_dir'), ':h')
   let path = expand('%:p')
@@ -11,20 +7,34 @@ function! RelativeFilename()
   return expand('%')
 endfunction
 
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
+let g:lightline = {'colorscheme': 'wombat'}
+
+let g:lightline#ale#indicator_ok = "👍"
+
+let lightline.component_function = {
+      \   'gitbranch': 'fugitive#head',
+      \   'filename': 'RelativeFilename'
+      \ }
+
+let g:lightline.component_expand = {
+      \  'linter_checking': 'lightline#ale#checking',
+      \  'linter_warnings': 'lightline#ale#warnings',
+      \  'linter_errors': 'lightline#ale#errors',
+      \  'linter_ok': 'lightline#ale#ok',
+      \ }
+
+let g:lightline.component_type = {
+      \     'linter_checking': 'left',
+      \     'linter_warnings': 'warning',
+      \     'linter_errors': 'error',
+      \ }
+
+let g:lightline.active = {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ],
+      \             [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ],
+      \             [ 'readonly', 'filename', 'modified' ] ],
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
       \              [ 'fileformat', 'fileencoding', 'filetype' ],
       \              [ 'gitbranch'] ]
-      \ },
-      \ 'component_function': {
-      \   'cocstatus': 'coc#status',
-      \   'currentfunction': 'CocCurrentFunction',
-      \   'gitbranch': 'fugitive#head',
-      \   'filename': 'RelativeFilename'
-      \ },
       \ }
