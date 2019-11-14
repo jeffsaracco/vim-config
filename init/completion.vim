@@ -1,5 +1,9 @@
 imap <c-space> <Plug>(asyncomplete_force_refresh)
 
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+
 " Disable auto popup
 let g:asyncomplete_auto_popup = 0
 
