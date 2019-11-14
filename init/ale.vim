@@ -9,7 +9,7 @@ let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
 \   'vim': [ 'remove_trailing_lines', 'trim_whitespace' ],
 \   'go': ['gofmt', 'gopls'],
-\   'ruby': ['solargraph', 'rubocop'],
+\   'ruby': ['remove_trailing_lines', 'rubocop', 'trim_whitespace'],
 \}
 
 
