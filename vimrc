@@ -84,13 +84,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 "
 " Languages
 "
-Plug 'pangloss/vim-javascript'
-Plug 'plasticboy/vim-markdown'
-Plug 'nono/vim-handlebars'
-Plug 'kchmck/vim-coffee-script'
 Plug 'juvenn/mustache.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'elzr/vim-json'
+Plug 'sheerun/vim-polyglot'
 
 Plug 'dense-analysis/ale'
 if has('nvim')
