@@ -60,14 +60,13 @@ Plug 'maximbaz/lightline-ale'
 Plug 'matt-royal/diffthese'
 Plug 'Peeja/vim-cdo'
 Plug 'tpope/vim-projectionist' " this is for :AV
-Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'vim-scripts/regreplop.vim' " This is for ctrl-K replacing
 
 "
 " Searching
 "
-Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-abolish' " For searching with :S vs :s
 Plug 'henrik/vim-qargs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -75,7 +74,6 @@ Plug 'pbogut/fzf-mru.vim'
 
 Plug 'jremmen/vim-ripgrep'
 Plug 'google/vim-searchindex'
-Plug 'nixprime/cpsm', { 'do': 'env PY3=OFF ./install.sh' }
 
 "
 " Navigation
@@ -107,10 +105,8 @@ endif
 " Development Tool Integration
 "
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-rhubarb' "GitHub extension for fugitive
 Plug 'airblade/vim-gitgutter'
-Plug 'pivotal/tmux-config'
-Plug 'sjl/vitality.vim'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 call plug#end()
 
