@@ -100,9 +100,10 @@ endif
 "
 " Development Tool Integration
 "
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb' "GitHub extension for fugitive
-Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/vim-gitbranch'
+" Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-rhubarb' "GitHub extension for fugitive
+" Plug 'airblade/vim-gitgutter'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 call plug#end()
 

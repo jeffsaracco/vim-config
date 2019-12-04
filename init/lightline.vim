@@ -1,19 +1,9 @@
-function! RelativeFilename()
-  let root = fnamemodify(get(b:, 'git_dir'), ':h')
-  let path = expand('%:p')
-  if path[:len(root)-1] ==# root
-    return path[len(root)+1:]
-  endif
-  return expand('%')
-endfunction
-
 let g:lightline = {'colorscheme': 'wombat'}
 
 let g:lightline#ale#indicator_ok = "👍"
 
 let lightline.component_function = {
-      \   'gitbranch': 'fugitive#head',
-      \   'filename': 'RelativeFilename'
+      \   'gitbranch': 'gitbranch#name',
       \ }
 
 let g:lightline.component_expand = {
